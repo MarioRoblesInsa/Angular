@@ -1,0 +1,8 @@
+<div>
+  <p>Numero 1 <input type="text" [(ngModel)]="numero1"></p>
+  <p>Numero 2 <input type="text" [(ngModel)]="numero2"></p>
+  <button (click)="getSuma()">sumar</button>
+  <p>El resultado es: {{resultado}}</p>
+  <p *ngIf="resultado>100; else menor100">Resultado mayor de 100</p>
+  <ng-template #menor100>Resultado menor de 100</ng-template>
+</div>
